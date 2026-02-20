@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Contact Me - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="email.php" method="POST">
+   
+
+    
+
+    <!-- Font Awesome for icons (optional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+
+<body style="background: #262525;">
+    <ul class="navlist" data-aos="fade-down">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="skill.html">Skills</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <br>
+    <div class="contact-container" data-aos="fade-up">
+        <h2>Contact Me</h2>
+        <form class="contact-form" action="albisusan2004@gmail.com" method="POST" enctype="text/plain" data-aos="fade-right">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+        </form>
+        <div class="contact-info" data-aos="fade-left"> 
+            <p>Feel free to contact me via email.</p>
+            <p>Email: <a href="mailto:albisusan2004@gmail.com">albisusan2004@gmail.com</a></p>
+            <p>Connect on <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></p>
+        </div>
+    </div>
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1200 });
+    </script>
+</body>
+</html>

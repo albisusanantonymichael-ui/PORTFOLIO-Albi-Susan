@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background: #262525;">
+    <ul class="navlist">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="skill.html">Skills</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger">
+        <i class="fas fa-bars"></i>
+    </div>
+<br>
+    <div class="project-title">Projects</div>
+
+    <div class="project">
+        <h2>AI-Driven Data Analyst Intern</h2>
+        <p style="color: #21038b; font-weight: bold;">
+            Issued by Tamil Nadu Skill Development Corporation (TN Skill) | 2026
+        </p>
+        <p>
+            Completed professional certification focusing on the full data science pipeline, from cleaning to predictive modeling.
+        </p>
+        <ul>
+            <li>Intensive training in Data Analytics, Machine Learning, EDA, and Data Visualization</li>
+            <li><strong>Real-time Project:</strong> Developed a Loan Default Prediction model using Python</li>
+            <li>Successfully performed complex Exploratory Data Analysis (EDA) to derive business insights</li>
+            <li>Completed the program with a final score of <strong>91%</strong></li>
+            <li>Technologies: Python, Pandas, Scikit-Learn, Matplotlib, Seaborn</li>
+        </ul>
+    </div>
+
+    <div class="project">
+        <h2>College Website Redesign</h2>
+        <p>
+            Led the redesign of our college website to improve usability, accessibility, and visual appeal.
+        </p>
+        <ul>
+            <li>Modern, mobile-friendly layout using HTML5 and CSS3</li>
+            <li>Enhanced navigation and user experience</li>
+            <li>Integrated news, events, and announcements sections</li>
+            <li>Optimized for fast loading and SEO</li>
+            <li>Collaborated with faculty and students for feedback</li>
+            <li>Technologies: HTML, CSS, JavaScript, Bootstrap</li>
+        </ul>
+    </div>
+
+    <div class="project">
+        <h2>Library Management System (LMS)</h2>
+        <p>
+            Developed a full-featured Library Management System to streamline book lending, returns, and inventory management for students and staff.
+        </p>
+        <ul>
+            <li>User authentication for students and librarians</li>
+            <li>Book catalog management and search functionality</li>
+            <li>Book issue and return tracking</li>
+            <li>Fine calculation for overdue books</li>
+            <li>Responsive dashboard for monitoring library activity</li>
+            <li>Technologies: HTML, CSS, JavaScript, PHP, MySQL</li>
+        </ul>
+    </div>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navlist = document.querySelector('.navlist');
+        hamburger.addEventListener('click', () => {
+            navlist.classList.toggle('mobile-menu');
+        });
+    </script>
+</body>
+</html>
