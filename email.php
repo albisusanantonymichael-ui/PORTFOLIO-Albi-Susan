@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         exit;
     }
 
-    $to = "albisusan2004@gmail.com"; // Your email
+    $to = "albisusan.antonymichael@gmail.com"; // Your email
     $subject = "New Contact Message from $name";
     $body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
 
