@@ -2,54 +2,158 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    
-    <title>Contact Me - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Albi Susan A.</title>
+    <meta name="description" content="Get in touch with Albi Susan A. Submit a message via the contact form or connect via email, phone, and GitHub.">
     <link rel="stylesheet" href="style.css">
-    <link rel="email.php" method="POST">
-   
-
-    
-
-    <!-- Font Awesome for icons (optional) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
+<body>
 
-
-<body style="background: #262525;">
-    <ul class="navlist" data-aos="fade-down">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="skill.html">Skills</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="project.html">Project</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <br>
-    <div class="contact-container" data-aos="fade-up">
-        <h2>Contact Me</h2>
-        <form class="contact-form" action="email.php" method="POST" data-aos="fade-right">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
-        </form>
-        <div class="contact-info"> 
-            <p>Feel free to contact me via email .</p>
-            <p>Email: <a href="mailto:albisusan.antonymichael@gmail.com">albisusan.antonymichael@gmail.com</a></p>
-            
-            <p>Connect on <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></p>
+    <!-- Header Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Albi Susan<span>.</span></a>
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="skills.html" class="nav-link">Skills</a></li>
+                    <li><a href="certifications.html" class="nav-link">Certifications</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                    <svg class="moon-icon" viewBox="0 0 24 24">
+                        <path d="M12.3 22h-.1c-5.5 0-10-4.5-10-10 0-4.8 3.5-8.9 8.2-9.7.5-.1 1 .2 1.2.7.2.5 0 1.1-.4 1.4-2.1 1.5-3.2 4.1-3.2 6.7 0 4 3.3 7.3 7.3 7.3 2.6 0 5.2-1.1 6.7-3.2.3-.4.9-.6 1.4-.4.5.2.8.7.7 1.2-.8 4.7-4.9 8.2-9.7 8.2z"/>
+                    </svg>
+                    <svg class="sun-icon" viewBox="0 0 24 24">
+                        <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z"/>
+                    </svg>
+                </button>
+                <button id="menu-toggle" class="menu-toggle" aria-label="Toggle Navigation Menu">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </button>
+            </div>
         </div>
-    </div>
-    <!-- AOS Animation Library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Contact Portal Section -->
+        <section class="container" style="padding-top: 120px;">
+            <h1 class="section-title reveal">Get In Touch</h1>
+            
+            <div class="contact-grid">
+                
+                <!-- Left Column: Sidebar Details -->
+                <div class="contact-card-sidebar reveal">
+                    <div class="contact-sidebar-header">
+                        <h3>Contact Information</h3>
+                        <p>Feel free to reach out for internship opportunities, project collaborations, or developer questions.</p>
+                    </div>
+
+                    <ul class="profile-info">
+                        <li>
+                            <!-- Email Icon -->
+                            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="20" height="20"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            <div>
+                                <strong style="display: block; font-size: 0.8rem; color: var(--text-muted);">Email</strong>
+                                <a href="mailto:albisusan.antonymichael@gmail.com">albisusan.antonymichael@gmail.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- Phone Icon -->
+                            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="20" height="20"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            <div>
+                                <strong style="display: block; font-size: 0.8rem; color: var(--text-muted);">Phone</strong>
+                                <a href="tel:8122173211">8122173211</a>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- GitHub Icon -->
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                            <div>
+                                <strong style="display: block; font-size: 0.8rem; color: var(--text-muted);">GitHub Repository</strong>
+                                <a href="https://github.com/albisusanantonymichael-ui/PORTFOLIO-Albi-Susan" target="_blank">View Project Repo</a>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- Pin Icon -->
+                            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="20" height="20"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <div>
+                                <strong style="display: block; font-size: 0.8rem; color: var(--text-muted);">Address</strong>
+                                <span>Kamaraj Nagar, Mylaudy, Kanniyakumari District-629 403.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right Column: Interactive Form -->
+                <div class="contact-form-wrapper reveal">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" placeholder="Collaboration Inquiry" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" placeholder="Write your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="align-self: flex-start;">Send Message</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <ul class="footer-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="footer-socials">
+                <a href="mailto:albisusan.antonymichael@gmail.com" class="social-circle" aria-label="Email">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+                </a>
+                <a href="https://github.com/albisusanantonymichael-ui/PORTFOLIO-Albi-Susan" target="_blank" class="social-circle" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                </a>
+            </div>
+            <p>&copy; 2026 Albi Susan A. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
     <script>
-      AOS.init({ duration: 1200 });
+        // Inline alert simulation on form submit
+        const contactForm = document.getElementById('contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const name = document.getElementById('name').value;
+                alert(`Thank you, ${name}! Your simulated message has been sent successfully.`);
+                contactForm.reset();
+            });
+        }
     </script>
 </body>
 </html>
